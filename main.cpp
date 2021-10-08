@@ -16,15 +16,37 @@ int main() {
 	while (game_is_finished == false) {
 		player_1_move();
 		draw_board(board);
-		//game_is_finished = check_if_game_is_finished();
-		//if (game_is_finished == true){ break; }
+		winner = check_if_game_is_finished(board);
+			if (winner == 'x'){ 
+				std::cout<<"GAME OVER\n The Winner is X\n";
+				break; 
+			}
+			else if (winner == 'o'){
+				std::cout<<"GAME OVER\n The Winner is O\n";
+				break; 
+			}
+			else if (winner == 't'){
+				std::cout<<"GAME OVER\n Tied";
+				break;
+			}
 
 		player_2_move();
 		draw_board(board);
-		//game_is_finished = check_if_game_is_finished();
+		winner = check_if_game_is_finished(board);
+			if (winner == 'x'){ 
+				std::cout<<"GAME OVER\n The Winner is X\n";
+				break; 
+			}
+			else if (winner == 'o'){
+				std::cout<<"GAME OVER\n The Winner is O\n";
+				break; 
+			}
+			else if (winner == 't'){
+				std::cout<<"GAME OVER\n Tied";
+				break;
+			}
 	}
 
-	//game_over();
 
 	return 0;
 }
