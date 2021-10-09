@@ -1,2 +1,3 @@
-# Unbeatable-Tic-Tac-Toe
-A Tic-Tac-Toe algorithm which can never be beaten. [work in progress]
+# Tic-Tac-Toe
+tic tac toe written in c++
+My fisrt ever c++ program...
